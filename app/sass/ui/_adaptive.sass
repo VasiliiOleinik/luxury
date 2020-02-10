@@ -1,0 +1,100 @@
+.mobile--menu,
+.hamburger
+  display: none
+@include media( 1199 )
+  .header__banner--title
+    font-size: .8rem
+@include media( 768 )
+  .header__banner--title
+    text-align: center
+    font-size: .6rem
+  .header .header__area-menu,
+  .header .header__area-social
+    display: none
+  .main--about .section--title,
+  .main--include .include--title,
+  .main .main--company-item .section--title
+    font-size: 2rem
+  .main--about_content
+    font-size: .8rem
+  .main--about,
+  .main--include,
+  .main .main--company-item,
+  .main .main--contacts
+    padding: 2rem 0rem
+  .main--include .include--list
+    margin-top: 1rem
+  .main--include .include--list__item
+    flex-basis: 100%
+    max-width: 100%
+  .main--include .include--list__item img
+    max-width: 450px
+  .main--include .include--list__item .include--item__about
+    padding-bottom: 0px
+  .main .main--company-item .section--title
+    margin-bottom: 1rem
+  .company--content__media,
+  .company--content__info,
+  .main .main--contacts .contacts--box
+    flex: 0 0 100%
+    max-width: 100%
+  .main .main--company-item .company--content,
+  .main--contacts .box
+    flex-direction: column
+  .header .header__area-logo
+    flex-basis: 100px
+    max-width: 100px
+  .mobile--menu
+    position: fixed
+    left: 0
+    top: 0
+    background: #1b1b1c
+    top: 40px
+    width: 100%
+    height: 100%
+    padding: 20px
+    z-index: 99999
+    overflow: auto
+    & li a
+      color: #ffffff
+      font-size: 1.25rem
+      padding: 1rem 1.25rem
+      text-transform: uppercase
+    & nav
+      margin-bottom: 50px
+    & .header__area-social
+      & a
+        margin: 1em
+        position: relative
+        width: 40px
+        height: 40px
+        &:after
+          content: ""
+          display: block
+          box-sizing: border-box
+          position: absolute
+          width: 40px
+          height: 40px
+          left: 50%
+          top: 50%
+          transform: translate(-50%, -50%)
+          border-radius: 50%
+          transition: all .3s cubic-bezier(.21,.67,.58,1)
+          border: 1px solid #ffffff
+  .header .header__area
+    background: #1b1b1c
+  .header__area-list
+    justify-content: space-between
+  .header .header__area-logo
+    padding: 0px
+  .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
+    background: #ffffff
+  .hamburger
+    display: block
+@include media( 550 )
+  .info--links_box
+    flex-basis: 100%
+    max-width: 100%
+    margin: 5px 0px
+  .info--links
+    flex-direction: column
